@@ -9,7 +9,7 @@ import CartButtons from "./CartButtons";
 import { useUserContext } from "../context/user_context";
 
 const Sidebar = () => {
-  const { state, openSidebar, closeSidebar } = useProductsContext();
+  const {  isSidebarOpen, closeSidebar } = useProductsContext();
   // const data = useProductsContext();
   // console.log(data);
   // const isOpen = true;
@@ -17,7 +17,7 @@ const Sidebar = () => {
     <SidebarContainer>
       <aside
         className={`${
-          state.isSidebarOpen ? "sidebar show-sidebar" : "sidebar"
+          isSidebarOpen ? "sidebar show-sidebar" : "sidebar"
         }`}
       >
         <div className="sidebar-header">
