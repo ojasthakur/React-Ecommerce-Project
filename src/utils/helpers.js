@@ -6,4 +6,13 @@ export const formatPrice = (number) => {
   return newNumber;
 };
 
-export const getUniqueValues = () => {};
+export const getUniqueValues = (data, type) => {
+  let allDataTypes = data.map((item) => {
+    return item[type];
+  });
+  if (type === "colors") {
+    allDataTypes = allDataTypes.flat();
+  }
+  let uniqueDataTypes = new Set(allDataTypes);
+  return ["all", ...uniqueDataTypes];
+};
