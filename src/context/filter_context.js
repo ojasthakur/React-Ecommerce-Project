@@ -73,7 +73,6 @@ export const FilterProvider = ({ children }) => {
     if (name === "shipping") {
       value = e.target.checked;
     }
-    console.log("hello");
     dispatch({ type: UPDATE_FILTERS, payload: { name, value } });
   };
   const clearFilters = () => {
