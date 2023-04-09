@@ -69,7 +69,7 @@ const SingleProductPage = () => {
             <p className="description">{description}</p>
             <p className="info">
               <span>Available : </span>
-              {stock > 0 ? "In Stock" : "Out of stock"}
+              {stock > 0 ? stock + " In Stock" : "Out of stock"}
             </p>
             <p className="info">
               <span>SKU :</span>
