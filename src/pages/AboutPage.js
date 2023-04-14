@@ -2,25 +2,25 @@ import React from "react";
 import styled from "styled-components";
 import { PageHero } from "../components";
 import aboutImg from "../assets/hero-bcg.jpeg";
+import myImg from "../assets/IMG20220320130412_sfw6it.jpg";
+import myImg2 from "../assets/IMG_2844.jpg";
 
 const AboutPage = () => {
   return (
     <main>
       <PageHero title="about" />
       <Wrapper className="page section section-center">
-        <img src={aboutImg} alt="about-image" />
+        <img src={myImg2} alt="about-image" />
         <article>
           <div className="title">
-            <h2>Our Story</h2>
+            <h2>My Story</h2>
             <div className="underline"></div>
           </div>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Consequuntur nobis vel doloribus at eos doloremque modi nostrum
-            beatae reprehenderit exercitationem facere provident consequatur
-            earum aut officiis qui cum, quasi eveniet veniam! Omnis minima vel
-            doloremque repudiandae deserunt fuga recusandae laborum officia a
-            mollitia, suscipit maxime saepe, quia molestias quae quis.
+            From early childhood the thing that made me the most happy was
+            bringing a smile to people's faces. T-mart is that childhood coming
+            to fruition. T-marts commitment to provide world class products to
+            every corner of the globe is what makes us stand out!
           </p>
         </article>
       </Wrapper>
